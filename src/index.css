@@ -1,0 +1,55 @@
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-earth-500 bg-cream-50 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-earth-500;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium
+           hover:bg-primary-700 transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-cream-200 text-earth-500 px-6 py-3 rounded-lg font-medium
+           hover:bg-cream-300 transition-colors duration-300;
+  }
+}
+
+/* Animation pour les bordures des cartes services */
+@keyframes border-beam {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-beam {
+  background: linear-gradient(90deg, #3b82f6, #d4a574, #9c8269, #3b82f6);
+  background-size: 300% 300%;
+  animation: border-beam 4s ease infinite;
+}
