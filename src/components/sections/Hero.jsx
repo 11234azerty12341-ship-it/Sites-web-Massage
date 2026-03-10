@@ -15,7 +15,7 @@ function Hero() {
           <div className="w-full md:w-1/2">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="/hero-massage.jpg"
+                src={import.meta.env.BASE_URL + 'hero-massage.jpg'}
                 alt="Massage professionnel pour le bien-être"
                 className="w-full h-full object-cover"
               />
