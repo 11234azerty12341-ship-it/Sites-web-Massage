@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone } from 'lucide-react'
 
 /*
  * Logique: Footer avec informations de contact
@@ -25,15 +25,7 @@ function Footer() {
             <ul className="space-y-3 text-sm text-earth-400">
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-primary-600" />
-                <span>01 23 45 67 89</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail size={16} className="text-primary-600" />
-                <span>contact@massage-bienetre.fr</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin size={16} className="text-primary-600" />
-                <span>123 Rue de la Détente, Paris</span>
+                <span>06 41 13 50 45</span>
               </li>
             </ul>
           </div>
@@ -42,9 +34,8 @@ function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Horaires</h4>
             <ul className="space-y-2 text-sm text-earth-400">
-              <li>Lundi - Vendredi : 9h - 19h</li>
-              <li>Samedi : 10h - 18h</li>
-              <li>Dimanche : Fermé</li>
+              <li>Lundi - Dimanche : 10h15 - 16h45</li>
+              <li>Mercredi : Fermé</li>
             </ul>
           </div>
         </div>

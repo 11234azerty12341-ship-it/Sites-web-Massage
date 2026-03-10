@@ -23,15 +23,15 @@ function Hero() {
           </div>
 
           {/* Texte */}
-          <div className="w-full md:w-1/2 space-y-6">
+          <div className="w-full md:w-1/2 space-y-6 text-center">
             <h3 className="text-2xl md:text-3xl font-semibold">
-              Texte Accroche
+              Libérez-vous des tensions, apaisez votre esprit.
             </h3>
             <p className="text-earth-400 text-lg leading-relaxed">
-              Découvrez nos massages professionnels pour votre bien-être et relaxation.
+              Laissez vos sens prendre le relais. Fermez les yeux et écoutez simplement le rythme de votre respiration. Chaque mouvement est une invitation à lâcher prise sur votre quotidien : le monde extérieur s'efface pour laisser place à un calme enveloppant qui vient nourrir votre besoin de sérénité. Découvrez nos massages professionnels pour votre bien-être et relaxation.
             </p>
-            <a href="#services" className="btn-primary inline-block">
-              Découvrir nos services
+            <a href="#reservation" className="btn-primary inline-block">
+              Prendre rendez-vous
             </a>
           </div>
         </div>

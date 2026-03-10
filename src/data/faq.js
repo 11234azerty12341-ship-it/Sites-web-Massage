@@ -7,11 +7,11 @@ export const faqData = [
   {
     id: 2,
     question: 'Quelle est la durée d\'une séance ?',
-    answer: 'Nos séances durent entre 60 et 90 minutes selon le type de massage choisi. Un temps d\'échange est prévu avant et après le massage.',
+    answer: 'Notre séance dure environ 45 minutes. Un temps d\'échange est prévu avant le massage pour cibler vos besoins.',
   },
   {
     id: 3,
     question: 'Comment prendre rendez-vous ?',
-    answer: 'Vous pouvez réserver directement en ligne via notre formulaire, par téléphone ou par email. Nous vous confirmerons votre créneau sous 24h.',
+    answer: 'Vous pouvez réserver soit par téléphone, soit via notre calendrier en ligne. Il vous suffit de cliquer sur la date et l\'heure de votre choix et de saisir vos coordonnées.',
   },
 ]

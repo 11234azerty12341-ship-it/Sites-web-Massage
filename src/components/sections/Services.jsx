@@ -8,7 +8,7 @@ function Services() {
   const services = [
     {
       title: 'Massage Intuitif',
-      description: 'Un massage personnalisé qui s\'adapte à vos besoins du moment.',
+      description: 'À l\'écoute de votre corps, je localise vos tensions pour les dénouer et vous offrir un soulagement profond.',
       icon: 'Heart',
     },
     {
@@ -21,9 +21,13 @@ function Services() {
   return (
     <section id="services" className="py-20 bg-cream-100">
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Nos Services
         </h2>
+
+        <p className="text-center text-lg font-semibold text-earth-500 mb-12">
+          Les massages pourront être pratiqués habillés ou à l'huile selon vos préférences.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service) => (

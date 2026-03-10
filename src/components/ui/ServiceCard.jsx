@@ -36,13 +36,14 @@ function ServiceCard({ title, description, icon }) {
           <p className="text-earth-400">{description}</p>
 
           {/* Bouton */}
-          <motion.button
-            className="btn-secondary mt-4"
+          <motion.a
+            href="#reservation"
+            className="btn-secondary mt-4 inline-block"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            En savoir plus
-          </motion.button>
+            Prendre rendez-vous
+          </motion.a>
         </div>
       </div>
     </motion.div>
