@@ -8,10 +8,6 @@ function Hero() {
   return (
     <section id="hero" className="pt-24 pb-16 bg-cream-50">
       <div className="container-custom">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8">
-          TITRE
-        </h1>
-
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Image */}
           <div className="w-full md:w-1/2">

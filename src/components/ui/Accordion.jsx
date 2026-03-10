@@ -44,9 +44,10 @@ function Accordion({ items }) {
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
               >
-                <p className="px-6 pb-4 text-earth-400">
-                  {item.answer}
-                </p>
+                <p
+                  className="px-6 pb-4 text-earth-400"
+                  dangerouslySetInnerHTML={{ __html: item.answer }}
+                />
               </motion.div>
             )}
           </AnimatePresence>
