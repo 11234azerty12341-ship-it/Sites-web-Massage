@@ -2,6 +2,8 @@
  * Logique: Section hero avec image et texte d'accroche
  * Structure: section > flex container (image + bloc texte)
  */
+import heroImage from '/hero-massage.jpg'
+
 function Hero() {
   return (
     <section id="hero" className="pt-24 pb-16 bg-cream-50">
@@ -15,7 +17,7 @@ function Hero() {
           <div className="w-full md:w-1/2">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
               <img
-                src={import.meta.env.BASE_URL + 'hero-massage.jpg'}
+                src={heroImage}
                 alt="Massage professionnel pour le bien-être"
                 className="w-full h-full object-cover"
               />
