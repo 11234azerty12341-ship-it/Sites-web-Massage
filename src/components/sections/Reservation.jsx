@@ -30,7 +30,7 @@ function Reservation() {
 
         <div
           className="calendly-inline-widget"
-          data-url="https://calendly.com/contactdanielmassage/30min"
+          data-url="https://calendly.com/contact-danielmassage"
           style={{ minWidth: '320px', height: '700px' }}
         />
       </div>
