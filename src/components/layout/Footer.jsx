@@ -35,7 +35,6 @@ function Footer() {
             <h4 className="font-semibold mb-4">Horaires</h4>
             <ul className="space-y-2 text-sm text-earth-400">
               <li>Lundi - Dimanche : 10h15 - 16h45</li>
-              <li>Mercredi : Fermé</li>
             </ul>
           </div>
         </div>
