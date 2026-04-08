@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Gift, CreditCard, Users, Star } from 'lucide-react'
 
 /*
- * Logique: Section tarifs avec cartes détaillées
+ * Logique: Section tarifs avec cartes détaillées (V2)
  * Structure: section > h2 + grid de cartes (Découverte, Unité, Fidélité, Parrainage)
  */
 function Tarifs() {
@@ -37,8 +37,8 @@ function Tarifs() {
   ]
 
   return (
-    <section id="tarifs" className="py-20 bg-cream-50">
-      <div className="container-custom">
+    <section id="tarifs" className="py-20 bg-cream-50 relative overflow-hidden">
+      <div className="container-custom relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Mes Tarifs & Offres
         </h2>
@@ -47,7 +47,7 @@ function Tarifs() {
           {pricingOptions.map((option, index) => (
             <motion.div
               key={option.title}
-              className={`p-6 rounded-2xl bg-white border ${option.highlight ? 'border-primary-300 shadow-lg' : 'border-cream-200'} shadow-sm flex flex-col items-center text-center`}
+              className={`p-6 rounded-2xl bg-white border ${option.highlight ? 'border-primary-300 shadow-lg ring-1 ring-primary-100' : 'border-cream-200'} shadow-sm flex flex-col items-center text-center`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -59,18 +59,18 @@ function Tarifs() {
               <h3 className="text-xl font-semibold mb-2">{option.title}</h3>
               <div className="text-2xl font-bold text-primary-600 mb-1">{option.price}</div>
               {option.duration && <div className="text-sm text-earth-300 mb-4 italic">{option.duration}</div>}
-              <p className="text-earth-400 text-sm">{option.description}</p>
+              <p className="text-earth-400 text-sm leading-relaxed">{option.description}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-earth-500 mb-6 italic">
-            Faites-en profiter vos proches ! Invitez un ami à découvrir mes soins et bénéficiez de 20 € de remise sur votre prochaine séance.
+          <p className="text-earth-500 mb-6 italic max-w-2xl mx-auto">
+            "Votre bien-être est ma priorité. N'hésitez pas à parrainer vos proches pour partager ces moments de détente."
           </p>
           <motion.a
             href="#reservation"
-            className="btn-primary inline-block"
+            className="btn-primary inline-block shadow-md hover:shadow-lg transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
